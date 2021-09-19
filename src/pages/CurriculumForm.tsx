@@ -3,92 +3,39 @@ import { Field, Form, Formik, FormikConfig, FormikValues } from 'formik';
 import { CheckboxWithLabel, TextField } from 'formik-material-ui';
 import React, { useState } from 'react';
 import { mixed, number, object } from 'yup';
+import { Address } from './modules/Address';
+import Education from './modules/Education';
+import Work from './modules/Work';
 
 const sleep = (time) => new Promise((acc) => setTimeout(acc, time));
 
-export function Curriculum() {
+export default function CurriculumForm() {
   return (
     <Card>
       <CardContent>
         <FormikStepper
           initialValues={{
-            firstName: "",
-            lastName: "",
+            firstName: '',
+            lastName: '',
             millionaire: false,
             money: 0,
-            description: "",
+            description: '',
           }}
           onSubmit={async (values) => {
             await sleep(3000);
-            console.log("values", values);
+            console.log('values', values);
           }}
         >
           <FormikStep label="Contact">
-            <Box paddingBottom={2}>
-              <Field
-                width="200"
-                name="firstName"
-                component={TextField}
-                label="First Name"
-              />
-               <Field
-                width="200"
-                name="lastName"
-                component={TextField}
-                label="Last Name"
-              />
-            </Box>
-            <Box paddingBottom={2}>
-            <Field
-                fullWidth
-                name="middleName"
-                component={TextField}
-                label="Middle Name (Optional)"
-              />
-            </Box>
-            <Box paddingBottom={2}>
-              <Field
-                name="millionaire"
-                type="checkbox"
-                component={CheckboxWithLabel}
-                Label={{ label: "I am a millionaire" }}
-              />
-            </Box>
+            <Address />
           </FormikStep>
           <FormikStep
-            label="Bank Accounts"
-            validationSchema={object({
-              money: mixed().when("millionaire", {
-                is: true,
-                then: number()
-                  .required()
-                  .min(
-                    1_000_000,
-                    "Because you said you are a millionaire you need to have 1 million"
-                  ),
-                otherwise: number().required(),
-              }),
-            })}
+            label="Education"
           >
-            <Box paddingBottom={2}>
-              <Field
-                fullWidth
-                name="money"
-                type="number"
-                component={TextField}
-                label="All the money I have"
-              />
-            </Box>
+            <Education />
           </FormikStep>
-          <FormikStep label="More Info">
-            <Box paddingBottom={2}>
-              <Field
-                fullWidth
-                name="description"
-                component={TextField}
-                label="Description"
-              />
-            </Box>
+          <FormikStep label="Work History">
+           <Work />
           </FormikStep>
         </FormikStepper>
       </CardContent>

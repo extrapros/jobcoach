@@ -5,22 +5,29 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.3",
-    "formik": "^2.2.9",
-    "formik-material-ui": "^4.0.0-alpha.1",
-    "next": "11.1.2",
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@material-ui/core": "5.0.0-alpha.24",
+    "@material-ui/icons": "5.0.0-alpha.24",
+    "@material-ui/lab": "5.0.0-alpha.24",
+    "@material-ui/utils": "5.0.0-alpha.24",
+    "date-fns": "^2.24.0",
+    "formik": "2.2.6",
+    "formik-material-ui": "3.0.1",
+    "next": "10.0.5",
     "pretier": "^0.0.1",
-    "react": "^17.0.2",
-    "react-dom": "17.0.2",
-    "yup": "^0.32.9"
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "yup": "0.32.8"
   },
   "devDependencies": {
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2",
-    "typescript": "^4.4.3"
+    "@types/node": "14.14.22",
+    "@types/react": "17.0.0",
+    "@types/react-dom": "17.0.0",
+    "typescript": "4.1.3"
   }
 }

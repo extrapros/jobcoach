@@ -9,7 +9,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles) {
-      jssStyles.parentElement.removeChild(jssStyles);
+      jssStyles.parentElement!.removeChild(jssStyles);
     }
   }, []);
 
@@ -22,7 +22,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <ThemeProvider theme={theme}>
         <AppBar position="fixed">
           <Toolbar variant="dense">
-            <Typography variant="h6">Job Coach Form</Typography>
+            <Typography variant="h6">Job Coach - Form</Typography>
           </Toolbar>
         </AppBar>
 
