@@ -1,34 +1,52 @@
+##Job Coach
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Table of contentes
+ - [General info](#general-info)
+ - [Technologies and Tools](#technologies-and-tools)
+ - [Setup](#setup)
+ - [Features](#features)
+ - [Status](#status)
+ - [Contact](#contact)
 
-First, run the development server:
+## General info
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+  Web app as the name says a web application for the clients of Pluss uses the service. Inside the app, the client can see offers, answer surveys, buy offers or send to a friend, see and use the voucher previously bought.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies / Tools
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+ - next.js  - 10.0.5
+ - react    - 17.0.1
+ - formik   - 2.2.6
+ - yup      - 0.32.8
+ - date-fns - 2.24.0
+ - material-ui - 5.0.0-alpha.24
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Setup
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Instructions to run a local copy for development.
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Instal `Nodejs`
+- Instal `yarn`
+- Install a proper IDE/Text editor for Javascript. It's therefore recommended to use VS Code or any other JavaScript-friendly IDE.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Starting the development server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To start the frontend server run `yarn install` from the directory of the project; Run `yarn dev` to start the application.
+This application must run with the Pluss Api, which is the backend part of it.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+List of features in Project session
+
+## Status
+
+Project is: _in progress_
+
+## Contact
+
+Denise Muniz - dendenmuniz@gmail.com
